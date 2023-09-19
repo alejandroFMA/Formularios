@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Cuestionario Bicicletas</h1>
+    <nav>
+        <a href="../index.html">Cuestionario Viejuner</a>
+    </nav>
+</header>
+<section class="formubicis">
+    <div class="fecha_robo">
+        <label for="fecha_robo">Fecha del robo:</label>
+        <input type="date" id="fecha" name="fecha">
+    </div>    
+    <br>
+    <div class="color_bici">
+        <label for="color_bici">Color de la bicileta:</label>
+        <input type="color" id="color" name="color" value="#ff0000">
+    </div>  
+    <br>
+    <div class="rango_precio">
+        <label for="rango_precio">Precio de la bicileta:</label>
+        <br>
+                <input type="range" id="rango_precio" name="rango_precio" min="0" max="500" step="100" list="markers"/>
+        <datalist id="markers">
+            <option value="0"></option>
+            <option value="100"></option>
+            <option value="200"></option>
+            <option value="300"></option>
+            <option value="400"></option>
+            <option value="500"></option>
+       </datalist>
+    </div>
+    <br>
+    <div class="tipo_bici">
+        <p>Tipo de bicileta</p>
+
+        <ul>
+            <li>Paseo</li>
+            <label for="paseo"> </label>
+            <select name="paseo" id="paseo">
+                <option value="blanck"></option>
+                <option value="Señorial">Señorial</option>
+                <option value="Anti-plebeyos">Anti-plebeyos</option>
+                <option value="PorEncimaDelHombro">PorEncimaDelHombro</option>
+            </select>
+            
+            <li>Montaña</li>
+            <lable for="montaña" id="montaña"></lable>
+            <select name="montaña" id="montaña">
+                <option value="blanck"></option>
+                <option value="gamusionos">Gamusinos premium</option>
+                <option value="hueleflores">Hueleflores premium</option>
+                <option value="fango">Fango lovers</option>
+        </select>
+      
+            <li>Carreras</li>
+            <lable for="carreras" id="carreras"></lable>
+            <select name="carreras" id="carreras">
+                <option value="blanck"></option>
+                <option value="Metroymedio">Metroymedio</option>
+                <option value="fluorescente">3 de la tarde. Fluorescente edition</option>
+                <option value="Grupitors">Grupitors</option>
+            </select>
+
+        </ul>
+       
+    </div>
+    
+    <div class="accesorios">
+        <p>Elige el accesorio:</p>
+        <label for="accesorio"></label>
+        <select id="accesorio" name="accesorio" size="6" multiple>
+        <option value="ruedines">Ruedines</option>
+        <option value="Pegatinas">Pegatinas</option>
+        <option value="Cestita">Cestita</option>
+        <option value="Bomba_aire">Bomba de aire
+        </option>
+        <option value="Timbre">Timbre</option>
+        <option value="Foco">Foco</option>
+        <br>
+        <br>
+        <input type="submit" value="Enviar"/>
+        <br>
+       
+        </select>
+    </div>
+    <br>
+    <div class="marca">
+        <label for="lang">¿Qué marca era?</label>
+        <select name="marca" id="marca">
+          <option value="selecciona">Selecciona una marca</option>
+          <option value="scott">scott</option>
+          <option value="merida">merida</option>
+          <option value="giant">giant</option>
+          <option value="cube">cube</option>
+          <option value="lapierre">lapierre</option>
+          <option value="orbea">orbea</option>
+          <option value="cannondale">cannondale</option>
+          <option value="bmc">bmc</option>
+          <option value="canyon">canyon</option>
+          <option value="look">look</option>
+          <option value="protek">protek</option>
+          <option value="pinarello">pinarello</option>
+          <option value="bianchi">bianchi</option>
+          <option value="bh">bh</option>
+          <option value="factor">factor</factor>
+          <option value="ghost">ghost</ghost>
+          <option value="cervelo">cervélo</option>
+          <option value="argon">argon</option>
+        </select>
+        <input type="submit" value="Enviar"/>
+
+        
+    </div>
+    <br>
+</section>
+   
+</body>
+</html>
